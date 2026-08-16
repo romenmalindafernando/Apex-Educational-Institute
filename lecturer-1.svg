@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="520" viewBox="0 0 480 520">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2f6fed"/><stop offset="1" stop-color="#0b1f44"/></linearGradient></defs>
+    <rect width="480" height="520" rx="36" fill="url(#g)"/>
+    <circle cx="240" cy="190" r="96" fill="#fff" opacity=".95"/>
+    <circle cx="240" cy="174" r="48" fill="#0b1f44"/>
+    <path d="M147 340c18-72 74-104 93-104s75 32 93 104" fill="#0b1f44"/>
+    <circle cx="382" cy="82" r="46" fill="#fff" opacity=".2"/>
+    <text x="240" y="440" text-anchor="middle" font-family="Arial" font-size="74" font-weight="800" fill="#fff">KF</text>
+    <text x="240" y="485" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#fff" opacity=".9">Kasun Fernando</text>
+    </svg>
