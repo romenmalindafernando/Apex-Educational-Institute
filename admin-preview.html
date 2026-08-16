@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Preview | Apex Academy</title><link rel="stylesheet" href="css/styles.css"></head>
+<body>
+<div class="admin-shell">
+  <aside class="admin-side">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Apex Academy"></a>
+    <nav class="admin-menu"><a class="active" href="#">Overview</a><a href="#">Courses</a><a href="#">Lecturers</a><a href="#">Timetable</a><a href="#">Registrations</a><a href="#">Announcements</a><a href="index.html">← Back to website</a></nav>
+  </aside>
+  <main class="admin-main">
+    <div class="admin-head"><div><div class="eyebrow">Admin preview</div><h1>Good morning, Admin</h1></div><button class="btn btn-outline" data-demo-action>+ New announcement</button></div>
+    <div class="grid-4">
+      <article class="card metric"><span>Total students</span><strong>1,250</strong><small>↑ 8.4% this month</small></article>
+      <article class="card metric"><span>New registrations</span><strong>86</strong><small>↑ 12 this week</small></article>
+      <article class="card metric"><span>Active courses</span><strong>12</strong><small>All running</small></article>
+      <article class="card metric"><span>Messages</span><strong>19</strong><small>7 unread</small></article>
+    </div>
+    <div class="grid-3" style="margin-top:22px;grid-template-columns:2fr 1fr">
+      <section class="card chart"><div class="card-footer"><div><strong style="font-size:1.2rem;color:var(--navy)">Registrations</strong><div class="help">Last 6 months</div></div><span class="badge">+18.2%</span></div><div class="bars"><div class="bar" style="height:42%" data-label="Feb"></div><div class="bar" style="height:58%" data-label="Mar"></div><div class="bar" style="height:54%" data-label="Apr"></div><div class="bar" style="height:72%" data-label="May"></div><div class="bar" style="height:84%" data-label="Jun"></div><div class="bar" style="height:96%" data-label="Jul"></div></div></section>
+      <section class="card content-card"><h3 style="margin-top:0">Quick actions</h3><div style="display:grid;gap:10px"><button class="btn btn-primary" data-demo-action>Add course</button><button class="btn btn-outline" data-demo-action>Update timetable</button><button class="btn btn-outline" data-demo-action>Export registrations</button></div></section>
+    </div>
+    <section class="card" style="margin-top:22px;overflow:hidden"><div style="padding:22px"><strong style="font-size:1.2rem;color:var(--navy)">Recent registrations</strong></div><div class="table-wrap" style="border:0;border-radius:0;box-shadow:none"><table><thead><tr><th>Student</th><th>Course</th><th>Mode</th><th>Date</th><th>Status</th></tr></thead><tbody><tr><td>Nethum Silva</td><td>Physics Masterclass</td><td>Physical</td><td>18 Jul 2026</td><td><span class="day-badge">New</span></td></tr><tr><td>Shenali Perera</td><td>Chemistry Complete</td><td>Online</td><td>18 Jul 2026</td><td><span class="day-badge">Contacted</span></td></tr><tr><td>Ravin Fernando</td><td>ICT Fast Track</td><td>Hybrid</td><td>17 Jul 2026</td><td><span class="day-badge">Confirmed</span></td></tr></tbody></table></div></section>
+  </main>
+</div>
+<div class="toast" id="toast"></div><script src="js/main.js"></script>
+</body></html>

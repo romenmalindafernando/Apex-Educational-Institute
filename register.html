@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Register for Apex Academy courses">
+<title>Registration | Apex Academy</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div>📍 No. 25, Galle Road, Colombo 03</div>
+    <div class="topbar-links"><a href="tel:+94771234567">☎ +94 77 123 4567</a><a href="mailto:hello@apexacademy.lk">✉ hello@apexacademy.lk</a></div>
+  </div>
+</div>
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Apex Academy"></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link" href="courses.html">Courses</a>
+<a class="nav-link" href="lecturers.html">Lecturers</a>
+<a class="nav-link" href="timetable.html">Timetable</a>
+<a class="nav-link" href="results.html">Results</a>
+<a class="nav-link" href="announcements.html">News</a>
+<a class="nav-link" href="contact.html">Contact</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="admin-preview.html">Admin demo</a>
+      <a class="btn btn-primary" href="register.html">Register now</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Registration</div><h1>Start your registration</h1><p>This demo form validates entries and saves submissions in the browser only.</p></div></section>
+<section class="section"><div class="container two-col" style="align-items:start">
+  <div class="reveal"><span class="eyebrow">Student enrolment</span><h2 style="font-size:clamp(2rem,4vw,3rem);color:var(--navy)">A simple registration experience</h2><p style="color:var(--muted)">For the real website, this form can be connected to PHP and MySQL so the institute can manage registrations from the admin dashboard.</p><div class="contact-list"><div class="contact-item"><div class="icon-chip">1</div><div><strong>Submit details</strong><div class="help">Choose a course and preferred mode.</div></div></div><div class="contact-item"><div class="icon-chip">2</div><div><strong>Receive confirmation</strong><div class="help">The office contacts the student.</div></div></div><div class="contact-item"><div class="icon-chip">3</div><div><strong>Attend orientation</strong><div class="help">Get schedule and payment details.</div></div></div></div></div>
+  <form class="form-card reveal" id="registrationForm" novalidate>
+    <div class="form-grid">
+      <div class="field"><label for="fullName">Full name</label><input id="fullName" name="fullName" required placeholder="Student's full name"></div>
+      <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" required pattern="[0-9+ ]{9,15}" placeholder="+94 77 123 4567"></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="student@example.com"></div>
+      <div class="field"><label for="school">School</label><input id="school" name="school" required placeholder="School name"></div>
+      <div class="field"><label for="grade">Grade / batch</label><select id="grade" name="grade" required><option value="">Select</option><option>2026 A/L</option><option>2027 A/L</option><option>Grade 11</option><option>Other</option></select></div>
+      <div class="field"><label for="course">Course</label><select id="course" name="course" required><option value="">Select</option><option>Physics Masterclass</option><option>Chemistry Complete</option><option>ICT Fast Track</option><option>Accounting Revision</option><option>English Excellence</option></select></div>
+      <div class="field"><label for="mode">Preferred mode</label><select id="mode" name="mode" required><option value="">Select</option><option>Physical</option><option>Online</option><option>Hybrid</option></select></div>
+      <div class="field"><label for="guardian">Parent / guardian phone</label><input id="guardian" name="guardian" pattern="[0-9+ ]{9,15}" placeholder="+94 7X XXX XXXX"></div>
+      <div class="field full"><label for="message">Message</label><textarea id="message" name="message" placeholder="Any questions or special requirements"></textarea></div>
+      <div class="field full"><label style="display:flex;align-items:flex-start;gap:9px;font-weight:600;color:var(--muted)"><input type="checkbox" required style="width:auto;margin-top:5px"> I confirm the information is correct and agree to be contacted.</label></div>
+      <div class="field full"><button class="btn btn-primary" type="submit">Submit registration →</button></div>
+    </div>
+    <div class="form-note" style="margin-top:16px">Demo only: no data is sent to a server.</div>
+  </form>
+</div></section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo.svg" alt="Apex Academy" style="filter:brightness(0) invert(1);width:170px">
+        <p>Modern learning, trusted lecturers and a clear path to academic success.</p>
+      </div>
+      <div><h3>Explore</h3><div class="footer-links"><a href="courses.html">Courses</a><a href="lecturers.html">Lecturers</a><a href="timetable.html">Timetable</a><a href="results.html">Results</a></div></div>
+      <div><h3>Support</h3><div class="footer-links"><a href="register.html">Registration</a><a href="announcements.html">Announcements</a><a href="contact.html">Contact</a><a href="admin-preview.html">Admin preview</a></div></div>
+      <div><h3>Contact</h3><p>No. 25, Galle Road<br>Colombo 03, Sri Lanka</p><p>+94 77 123 4567<br>hello@apexacademy.lk</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Apex Academy. Demo website.</span><span>Designed for client presentation.</span></div>
+  </div>
+</footer>
+<a class="whatsapp" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+
+</body>
+</html>

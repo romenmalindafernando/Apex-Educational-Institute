@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Find Grade 6 to 11 class times at Apex Academy and New Apex">
+<title>Timetable Finder | Apex Academy</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="timetable">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div>📍 Apex Academy, Colombo 03 · New Apex, Nugegoda</div>
+    <div class="topbar-links">
+      <a href="tel:+94771234567">☎ +94 77 123 4567</a>
+      <a href="mailto:hello@apexacademy.lk">✉ hello@apexacademy.lk</a>
+    </div>
+  </div>
+</div>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Apex Academy"></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="courses.html">Courses</a>
+      <a class="nav-link" href="lecturers.html">Lecturers</a>
+      <a class="nav-link active" href="timetable.html">Timetable</a>
+      <a class="nav-link" href="results.html">Results</a>
+      <a class="nav-link" href="announcements.html">News</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="admin-preview.html">Admin demo</a>
+      <a class="btn btn-primary" href="register.html">Register now</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero timetable-hero">
+    <div class="container timetable-hero-grid">
+      <div>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Timetable finder</div>
+        <span class="badge"><span class="dot"></span> Grades 6–11 · Two locations</span>
+        <h1>Find the right class in three simple steps</h1>
+        <p>Select a teacher and grade to compare the same class at Apex Academy and New Apex. If a student misses one location, the alternative class is easy to find.</p>
+      </div>
+      <div class="timetable-hero-note">
+        <div class="switch-icon" aria-hidden="true">A ⇄ N</div>
+        <div>
+          <strong>Flexible attendance</strong>
+          <p>Both locations follow the same weekly lesson plan for each teacher and grade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section timetable-finder-section">
+    <div class="container">
+      <div class="finder-progress" aria-label="Timetable selection progress">
+        <div class="finder-step active" data-progress-step="1">
+          <span>1</span>
+          <div><strong>Teacher</strong><small>Choose the subject teacher</small></div>
+        </div>
+        <div class="finder-progress-line"></div>
+        <div class="finder-step" data-progress-step="2">
+          <span>2</span>
+          <div><strong>Grade</strong><small>Select Grade 6–11</small></div>
+        </div>
+        <div class="finder-progress-line"></div>
+        <div class="finder-step" data-progress-step="3">
+          <span>3</span>
+          <div><strong>Compare</strong><small>View both institutes</small></div>
+        </div>
+      </div>
+
+      <section class="finder-panel reveal" aria-labelledby="teacher-heading">
+        <div class="finder-panel-head">
+          <div>
+            <span class="eyebrow">Step 1</span>
+            <h2 id="teacher-heading">Who is your teacher?</h2>
+            <p>Select one teacher. Grade buttons will appear below the selected teacher.</p>
+          </div>
+          <button class="btn btn-outline finder-reset" id="timetableReset" type="button" hidden>Start again</button>
+        </div>
+
+        <div class="teacher-selector" id="teacherSelector">
+          <button class="teacher-select-card" type="button" data-teacher="kasun" aria-pressed="false">
+            <img src="assets/lecturer-1.svg" alt="">
+            <span class="teacher-select-content">
+              <span class="teacher-subject">Mathematics</span>
+              <strong>Kasun Fernando</strong>
+              <small>Grades 6–11 · English medium</small>
+            </span>
+            <span class="select-arrow">→</span>
+          </button>
+
+          <button class="teacher-select-card" type="button" data-teacher="nethmi" aria-pressed="false">
+            <img src="assets/lecturer-2.svg" alt="">
+            <span class="teacher-select-content">
+              <span class="teacher-subject">Science</span>
+              <strong>Nethmi Perera</strong>
+              <small>Grades 6–11 · English medium</small>
+            </span>
+            <span class="select-arrow">→</span>
+          </button>
+
+          <button class="teacher-select-card" type="button" data-teacher="ashan" aria-pressed="false">
+            <img src="assets/lecturer-3.svg" alt="">
+            <span class="teacher-select-content">
+              <span class="teacher-subject">ICT</span>
+              <strong>Ashan Silva</strong>
+              <small>Grades 6–11 · English medium</small>
+            </span>
+            <span class="select-arrow">→</span>
+          </button>
+
+          <button class="teacher-select-card" type="button" data-teacher="dinithi" aria-pressed="false">
+            <img src="assets/lecturer-4.svg" alt="">
+            <span class="teacher-select-content">
+              <span class="teacher-subject">English</span>
+              <strong>Dinithi Jayawardena</strong>
+              <small>Grades 6–11 · English medium</small>
+            </span>
+            <span class="select-arrow">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="grade-panel" id="gradePanel" aria-labelledby="grade-heading" hidden>
+        <div class="grade-panel-copy">
+          <span class="eyebrow">Step 2</span>
+          <h2 id="grade-heading">Select your grade</h2>
+          <p id="selectedTeacherSummary">Choose a grade to view the two available class times.</p>
+        </div>
+        <div class="grade-selector" id="gradeSelector" role="group" aria-label="Select grade">
+          <button type="button" class="grade-button" data-grade="6"><span>Grade</span><strong>6</strong></button>
+          <button type="button" class="grade-button" data-grade="7"><span>Grade</span><strong>7</strong></button>
+          <button type="button" class="grade-button" data-grade="8"><span>Grade</span><strong>8</strong></button>
+          <button type="button" class="grade-button" data-grade="9"><span>Grade</span><strong>9</strong></button>
+          <button type="button" class="grade-button" data-grade="10"><span>Grade</span><strong>10</strong></button>
+          <button type="button" class="grade-button" data-grade="11"><span>Grade</span><strong>11</strong></button>
+        </div>
+      </section>
+
+      <section class="schedule-result" id="scheduleResult" aria-live="polite" hidden>
+        <div class="schedule-result-head">
+          <div>
+            <span class="eyebrow">Step 3</span>
+            <h2 id="scheduleTitle">Your class timetable</h2>
+            <p id="scheduleSubtitle"></p>
+          </div>
+          <div class="same-lesson-badge">
+            <span>✓</span>
+            <div><strong>Same weekly lesson</strong><small>Attend the other location when needed</small></div>
+          </div>
+        </div>
+
+        <div class="branch-comparison">
+          <article class="branch-card apex-branch">
+            <div class="branch-card-top">
+              <div class="branch-brand">
+                <span class="branch-letter">A</span>
+                <div><span class="branch-label">Main institute</span><h3>Apex Academy</h3></div>
+              </div>
+              <span class="branch-status">Primary class</span>
+            </div>
+            <div class="branch-details">
+              <div class="branch-detail"><span>Day</span><strong id="apexDay">—</strong></div>
+              <div class="branch-detail"><span>Time</span><strong id="apexTime">—</strong></div>
+              <div class="branch-detail"><span>Location</span><strong id="apexLocation">—</strong></div>
+              <div class="branch-detail"><span>Hall</span><strong id="apexHall">—</strong></div>
+            </div>
+            <div class="branch-footer">
+              <span class="location-dot"></span>
+              No. 25, Galle Road, Colombo 03
+            </div>
+          </article>
+
+          <div class="branch-switch" aria-hidden="true">
+            <span>Missed it?</span>
+            <strong>⇄</strong>
+            <small>Use the alternative</small>
+          </div>
+
+          <article class="branch-card new-apex-branch">
+            <div class="branch-card-top">
+              <div class="branch-brand">
+                <span class="branch-letter">N</span>
+                <div><span class="branch-label">Other location</span><h3>New Apex</h3></div>
+              </div>
+              <span class="branch-status alternative">Make-up option</span>
+            </div>
+            <div class="branch-details">
+              <div class="branch-detail"><span>Day</span><strong id="newApexDay">—</strong></div>
+              <div class="branch-detail"><span>Time</span><strong id="newApexTime">—</strong></div>
+              <div class="branch-detail"><span>Location</span><strong id="newApexLocation">—</strong></div>
+              <div class="branch-detail"><span>Hall</span><strong id="newApexHall">—</strong></div>
+            </div>
+            <div class="branch-footer">
+              <span class="location-dot"></span>
+              No. 88, High Level Road, Nugegoda
+            </div>
+          </article>
+        </div>
+
+        <div class="attendance-note">
+          <div class="attendance-note-icon">i</div>
+          <div>
+            <strong>Before attending the other location</strong>
+            <p>Please inform the class coordinator through WhatsApp. This helps the institute confirm available seating and any room changes.</p>
+          </div>
+          <a class="btn btn-secondary" id="timetableWhatsApp" href="https://wa.me/94771234567" target="_blank" rel="noopener">Notify coordinator</a>
+        </div>
+      </section>
+
+      <section class="finder-empty-state" id="finderEmptyState">
+        <div class="finder-empty-visual">⌁</div>
+        <h2>Your timetable will appear here</h2>
+        <p>Start by selecting a teacher above. Only the relevant grade and branch times will be shown.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="section-sm section-soft">
+    <div class="container">
+      <div class="timetable-help-grid">
+        <article class="timetable-help-card reveal">
+          <span>01</span>
+          <div><h3>Select the correct teacher</h3><p>Every teacher conducts classes only at Apex Academy and New Apex.</p></div>
+        </article>
+        <article class="timetable-help-card reveal">
+          <span>02</span>
+          <div><h3>Choose the student’s grade</h3><p>Grades 6–11 have separate times, so only the chosen grade is displayed.</p></div>
+        </article>
+        <article class="timetable-help-card reveal">
+          <span>03</span>
+          <div><h3>Use the second location if needed</h3><p>The two classes cover the same weekly lesson, making make-up attendance simple.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo.svg" alt="Apex Academy" style="filter:brightness(0) invert(1);width:170px">
+        <p>Modern learning, trusted lecturers and a clear path to academic success.</p>
+      </div>
+      <div><h3>Explore</h3><div class="footer-links"><a href="courses.html">Courses</a><a href="lecturers.html">Lecturers</a><a href="timetable.html">Timetable</a><a href="results.html">Results</a></div></div>
+      <div><h3>Support</h3><div class="footer-links"><a href="register.html">Registration</a><a href="announcements.html">Announcements</a><a href="contact.html">Contact</a><a href="admin-preview.html">Admin preview</a></div></div>
+      <div><h3>Contact</h3><p>No. 25, Galle Road<br>Colombo 03, Sri Lanka</p><p>+94 77 123 4567<br>hello@apexacademy.lk</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Apex Academy. Demo website.</span><span>Designed for client presentation.</span></div>
+  </div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
